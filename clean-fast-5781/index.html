@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clean Fast - Premium house cleaning service for high-end homes in the USA.">
+    <title>Clean Fast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html { margin: 0; padding: 0; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        * { box-sizing: border-box; }
+        header { position: fixed; top: 0; width: 100%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 999; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        header a { text-decoration: none; color: #111827; font-weight: 700; }
+        .cta-btn { padding: 0.5rem 1rem; background: #111827; color: #fff; border-radius: 5px; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .hero { background: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1400&q=80') center/cover; color: #fff; text-align: center; padding: 200px 20px 100px; position: relative; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); }
+        .hero > * { position: relative; }
+        .headline { font-size: 2.5rem; font-weight: 700; }
+        .subheadline { margin: 1rem 0 2rem; font-size: 1.2rem; }
+        .counter { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
+        .counter div { font-size: 1.5rem; }
+        .services, .testimonials, .results { padding: 4rem 2rem; text-align: center; }
+        .services h2, .testimonials h2, .results h2 { font-size: 2rem; margin-bottom: 2rem; }
+        .services .card, .testimonials .card { background: #fff; border-radius: 10px; padding: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .services .card:hover, .testimonials .card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .services .cards, .testimonials .cards { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        .services svg, .testimonials img { width: 50px; height: 50px; margin-bottom: 1rem; }
+        .testimonials img { border-radius: 50%; }
+        .results { background: #111827; color: #fff; }
+        .cta-final { background: #111827; color: #fff; padding: 3rem 2rem; text-align: center; }
+        .cta-final a { display: inline-block; margin-top: 1rem; padding: 1rem 2rem; background: #25D366; color: #fff; border-radius: 5px; font-weight: 700; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-final a:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        footer { background: #f5f5f5; padding: 1rem 2rem; text-align: center; }
+        .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 0.7rem 1rem; border-radius: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.3s, box-shadow 0.3s; }
+        .whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#">Clean Fast</a>
+    <a href="https://wa.me/16892802039" class="cta-btn">Contact Us</a>
+</header>
+
+<section class="hero">
+    <h1 class="headline">Limpeza de alto padrão para casas que merecem o melhor</h1>
+    <p class="subheadline">Premium house cleaning service for high-end homes in the USA.</p>
+    <a href="https://wa.me/16892802039" class="cta-btn">Get Started</a>
+    <div class="counter">
+        <div><span id="homes">0</span>+ Homes served</div>
+        <div><span id="rating">0</span> Stars Average rating</div>
+        <div><span id="satisfaction">0</span>% Satisfaction guaranteed</div>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Por que escolher?</h2>
+    <div class="cards">
+        <div class="card">
+            <svg fill="#111827" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" /><path d="M17 9H9V7a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1h9a1 1 0 0 0 0-2zm-7 4h7v2H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H10a1 1 0 0 0 0 2z"/></svg>
+            <h3>Pontual</h3>
+            <p>Schedule the perfect day and time, five-star standards</p>
+        </div>
+        <div class="card">
+            <svg fill="#111827" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" /><path d="M17 9H9V7a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1h9a1 1 0 0 0 0-2zm-7 4h7v2H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H10a1 1 0 0 0 0 2z"/></svg>
+            <h3>Exclusive Fixed</h3>
+            <p>A dedicated professional trained by us, 100% committed to your home</p>
+        </div>
+        <div class="card">
+            <svg fill="#111827" viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 0 0 0 0-24zm0 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20z" /><path d="M17 9H9V7a1 1 0 0 0-2 0v3a1 1 0 0 0 1 1h9a1 1 0 0 0 0-2zm-7 4h7v2H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H10a1 1 0 0 0 0 2z"/></svg>
+            <h3>Deep Clean</h3>
+            <p>Complete thorough cleaning for your high-end residence (most requested)</p>
+        </div>
+    </div>
+</section>
+
+<section class="results">
+    <h2>Resultados</h2>
+    <div class="counter">
+        <div><span id="homes-served">0</span>+ Homes served</div>
+        <div><span id="stars-rating">0</span> Stars Average rating</div>
+        <div><span id="satisfaction-guaranteed">0</span>% Satisfaction guaranteed</div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Depoimentos</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah Mitchell">
+            <h3>Sarah Mitchell</h3>
+            <p>Clean Fast completely transformed how I see home cleaning. Professional, discreet, and absolutely perfect.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Harrington">
+            <h3>James Harrington</h3>
+            <p>I have tried many cleaning services but Clean Fast is on a completely different level. Worth every penny.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-final">
+    <h2>Ready for a spotless home?</h2>
+    <p>Contact us today to schedule your premium cleaning service.</p>
+    <a href="https://wa.me/16892802039">Book Now</a>
+</section>
+
+<footer>
+    <p>&copy; 2023 Clean Fast. Todos os direitos reservados.</p>
+</footer>
+
+<a href="https://wa.me/16892802039" class="whatsapp-btn">WhatsApp</a>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const counters = document.querySelectorAll('.counter span');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const animateCounters = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const speed = 200;
+                        const increment = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 10);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(counter);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(animateCounters, options);
+
+        counters.forEach(counter => {
+            counter.setAttribute('data-target', counter.innerText);
+            counter.innerText = '0';
+            observer.observe(counter);
+        });
+    });
+</script>
+
+</body>
+</html>
